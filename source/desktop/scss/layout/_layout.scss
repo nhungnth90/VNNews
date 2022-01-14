@@ -1,0 +1,18 @@
+/* ====================================
+   LAYOUT
+   ==================================== */
+
+.l-grid {
+    width: 1170px;
+    margin: auto;
+    @include clearfix();
+
+    @include breakpoint(0, 1024px) {
+        width: 980px;
+    }
+}
+
+.l-content {
+    width: 840px;
+    float: left;
+}

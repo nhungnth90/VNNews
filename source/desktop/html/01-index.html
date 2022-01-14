@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Việt Nam News</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/css/vnnews.css">
+</head>
+
+<body>
+    <header class="site-header">
+        @@include('../component/header/header.html')
+
+        @@include('../component/nav/nav.html')
+    </header>   <!-- end .site-header -->
+
+    <div class="site-content">
+        <div class="l-grid">
+            @@include('../component/spotlight/spotlight.html')
+        </div>
+    </div>  <!-- end .site-content -->
+
+    <footer class="site-footer">
+
+    </footer>   <!-- end .site-footer -->
+
+    <!-- JS -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
+    <script src="../js/custom.js"></script>
+
+    <!-- JS Slick -->
+    <script src="../js/slick.min.js"></script>
+    <script>
+        $('.spotlight-slick').slick({
+            fade: true
+        });
+    </script>
+</body>
+
+</html>

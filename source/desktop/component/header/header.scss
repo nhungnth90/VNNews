@@ -1,0 +1,53 @@
+/* ====================================
+   HEADER
+   ==================================== */
+
+@import "../../scss/bootstrap-5.1.1/mixins/clearfix";
+@import "../../scss/base/custom-variables";
+
+.topbar {
+    height: 40px;
+    background: $info;
+    display: flex;
+    border-radius: 0 0 5px 5px;
+
+    * {
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: #666;
+    }
+
+    .ms-auto {
+        display: flex;
+
+        a {
+            margin-left: 20px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.site-header {
+    margin-bottom: 10px;
+
+    .logo {
+        width: 300px;
+        height: 58px;
+        background: url("../img/vnn_logo.png") 0 0 no-repeat;
+        text-indent: -999em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 98px;
+    }
+}

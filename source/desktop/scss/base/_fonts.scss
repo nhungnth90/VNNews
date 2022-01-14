@@ -1,0 +1,156 @@
+/* ====================================
+   FONTS
+   ==================================== */
+
+// Poppins
+@font-face {
+    font-family: 'Poppins';
+    src: local('☺'),
+        url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('☺'),
+        url('../fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('☺'),
+        url('../fonts/Poppins/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('☺'),
+        url('../fonts/Poppins/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+// PlayfairDisplay
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: local('☺'),
+        url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Roboto
+@font-face {
+    font-family: 'Roboto';
+    src: local('☺'),
+        url('../fonts/Roboto/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('☺'),
+        url('../fonts/Roboto/Roboto-LightItalic.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('☺'),
+        url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Fontello
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello/fontello.eot');
+    src: local('☺'),
+        url('../fonts/fontello/fontello.eot#iefix') format('embedded-opentype'),
+        url('../fonts/fontello/fontello.woff') format('woff'),
+        url('../fonts/fontello/fontello.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+.fal {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+    content: '\e801';
+}
+
+.icon-home:before {
+    content: '\e802';
+}
+
+.icon-instagram:before {
+    content: '\e803';
+}
+
+.icon-paper-plane:before {
+    content: '\e806';
+}
+
+.icon-phone:before {
+    content: '\e807';
+}
+
+.icon-question:before {
+    content: '\e804';
+}
+
+.icon-rss:before {
+    content: '\e809';
+}
+
+.icon-search:before {
+    content: '\e805';
+}
+
+.icon-twitter:before {
+    content: '\e808';
+}
+
+.icon-youtube:before {
+    content: '\e800';
+}

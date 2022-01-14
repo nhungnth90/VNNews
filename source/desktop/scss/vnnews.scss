@@ -1,0 +1,33 @@
+/* ====================================
+   BIZNEWS
+   ==================================== */
+
+@import "base/custom-variables";
+@import "bootstrap-5.1.1/bootstrap.scss";
+
+
+/* utilities */
+@import "mixins/mixins";
+
+
+/* base */
+@import "base/custom-reboot";
+@import "base/fonts";
+
+
+/* layout */
+@import "layout/layout";
+@import "layout/story";
+@import "layout/region";
+@import "layout/icons";
+
+
+/* plugins */
+@import "plugins/slick.css";
+@import "plugins/slick-theme.css";
+
+
+/* component */
+@import "../component/header/header.scss";
+@import "../component/nav/nav.scss";
+@import "../component/spotlight/spotlight.scss";

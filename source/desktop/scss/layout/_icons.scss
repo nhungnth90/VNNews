@@ -1,0 +1,44 @@
+/* ====================================
+   ICONS
+   ==================================== */
+
+.spr {
+    background: url("../img/vnn_sprites.svg") no-repeat;
+    background-size: 300px 300px;
+    display: block;
+
+    &--home {
+        width: 18px;
+        height: 20px;
+    }
+
+    &--search {
+        width: 18px;
+        height: 18px;
+        background-position: -100px 0;
+    }
+
+    &--menu {
+        width: 16px;
+        height: 14px;
+        background-position: -200px 0;
+    }
+
+    &--fb {
+        width: 10px;
+        height: 18px;
+        background-position: 0 -100px;
+    }
+
+    &--tt {
+        width: 16px;
+        height: 14px;
+        background-position: -100px -100px;
+    }
+
+    &--yt {
+        width: 18px;
+        height: 12px;
+        background-position: -200px -100px;
+    }
+}
