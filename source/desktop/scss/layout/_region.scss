@@ -3,26 +3,52 @@
    ==================================== */
 
 .zone {
+    margin-bottom: 30px;
+
     &__heading {
-        margin-bottom: 30px;
+        position: relative;
+        margin-bottom: 15px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #eee;
+            position: absolute;
+            top: 50%;
+        }
+
+        * {
+            display: inline-block;
+        }
 
         .heading {
             font-size: 24px;
-            line-height: 30px;
+            color: $primary;
             font-weight: 700;
             text-transform: uppercase;
+            z-index: 1;
+            position: relative;
+            background: #fff;
+            padding-right: 20px;
 
-            &:before {
+            &::first-letter {
+                color: $secondary;
+            }
+
+            &:after {
                 content: "";
-                display: block;
-                width: 40px;
-                height: 3px;
-                background: $primary;
-                margin-bottom: 20px;
+                width: 8px;
+                height: 8px;
+                background: $secondary;
+                float: left;
+                margin: 10px 10px 0 0;
+                border-radius: 20px;
             }
         }
 
-        a.heading:hover {
+        a:hover {
             color: $secondary;
         }
     }
@@ -30,16 +56,71 @@
     &__content {
         @include clearfix();
     }
+}
 
-    &.border {
-        .zone__heading {
-            .heading {
-                font-size: 20px;
+.aside {
+    margin-bottom: 30px;
 
-                &:before {
-                    margin: -1px 0 10px;
-                }
+    &__heading {
+        height: 50px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        background: $primary;
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+        .heading {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            &:after {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                width: 8px;
+                height: 8px;
+                margin-left: 15px;
+                background: #fff;
+                border-radius: 20px;
             }
+        }
+    }
+
+    &__content {
+        @include clearfix();
+    }
+
+    &--latest {
+        .story:not(:last-child) {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .story__thumb {
+            width: 110px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .story__title {
+            font-size: 14px;
+            line-height: 22px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .number {
+            font-size: 50px;
+            line-height: 36px;
+            font-weight: 700;
+            color: rgba(0, 0, 0, .03);
+            position: absolute;
+            top: 35px;
+            right: 0;
         }
     }
 }

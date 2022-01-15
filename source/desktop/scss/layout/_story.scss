@@ -4,31 +4,26 @@
 
 .story {
     position: relative;
-
-    .time {
-        font-size: 13px;
-        font-size: 1.3rem;
-        color: #999;
-
-        &:before {
-            content: "•";
-            margin: 0 8px;
-        }
-    }
+    @include clearfix();
 
     &__thumb {
         @include thumb();
     }
 
     &__title {
+        font-family: $font-family-serif;
         font-size: 16px;
         font-size: 1.6rem;
-        line-height: 22px;
-        line-height: 2.2rem;
+        line-height: 24px;
+        line-height: 2.4rem;
         font-weight: 700;
 
         &:hover {
             color: $primary;
+        }
+
+        i {
+            margin-right: 6px;
         }
     }
 
@@ -37,39 +32,27 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 0 10px 10px;
+        padding: 0 20px 15px;
 
         .story__title {
-            font-size: 18px;
-            line-height: 24px;
             color: #fff;
-            margin-bottom: 5px;
+        }
+
+        .story__link {
+            color: $secondary;
         }
     }
 
     &__link {
-        font-size: 13px;
-        font-size: 1.3rem;
+        font-size: 12px;
+        font-size: 1.2rem;
         color: $primary;
-        font-weight: 600;
+        text-transform: capitalize;
 
         &:hover {
             color: $primary;
             text-decoration: underline;
         }
-    }
-
-    &--primary {
-        @include clearfix();
-
-        .story__thumb {
-            width: 100px;
-            height: 100px;
-            float: left;
-            margin-right: 20px;
-        }
-
-        .story__title {}
     }
 }
 
@@ -80,8 +63,10 @@
 }
 
 .summary {
-    line-height: 22px;
+    font-family: $font-family-sans-serif;
+    line-height: 24px;
     color: #666;
+    font-weight: 300;
 
     * {
         font-size: 14px;

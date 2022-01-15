@@ -24,7 +24,11 @@
     <div class="site-content">
         <div class="l-grid">
             @@include('../component/spotlight/spotlight.html')
+
+            @@include('../component/sidebar/sidebar.html')
         </div>
+
+        @@include('../component/multimedia/multimedia.html')
     </div>  <!-- end .site-content -->
 
     <footer class="site-footer">
@@ -39,8 +43,12 @@
     <!-- JS Slick -->
     <script src="../js/slick.min.js"></script>
     <script>
-        $('.spotlight-slick').slick({
-            fade: true
+        $('#spotlight_slick').slick({
+            arrows: false,
+            dots: true,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 5000
         });
     </script>
 </body>
