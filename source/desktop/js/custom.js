@@ -40,3 +40,6 @@ function openTabs(el) {
 
     btn.classList.add("active");
 }
+
+
+/*--- News Ticker ---*/

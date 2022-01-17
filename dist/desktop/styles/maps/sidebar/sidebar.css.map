@@ -1,1 +1,0 @@
-{"version":3,"sources":["sidebar/sidebar.scss"],"names":[],"mappings":"AAIA,SACI,MAAO,MACP,MAAO","file":"../../component/sidebar/sidebar.css","sourcesContent":["/* ====================================\r\n   SIDEBAR\r\n   ==================================== */\r\n\r\n.sidebar {\r\n    width: 300px;\r\n    float: right;\r\n}"]}

@@ -17,6 +17,11 @@
     float: left;
 }
 
+.sidebar {
+    width: 300px;
+    float: right;
+}
+
 .site-content {
     .row {
         margin-right: calc(var(--bs-gutter-x) * -1);
@@ -41,5 +46,29 @@
 
     &--dark {
         background: $success;
+    }
+}
+
+.menu-list {
+    .col {
+        padding: 0;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .menu-heading {
+        font-size: 16px;
+        font-size: 1.6rem;
+        color: $primary;
+        font-weight: 600;
+    }
+
+    .menu-item {
+        font-size: 13px;
+        font-size: 1.3rem;
+        color: #666;
+        padding: 5px 0;
     }
 }

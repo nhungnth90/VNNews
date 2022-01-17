@@ -123,4 +123,90 @@
             right: 0;
         }
     }
+
+    &.has-bg {
+        background: $info;
+
+        .aside__heading {
+            margin: 0;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .aside__content {
+            padding: 10px 20px 20px;
+        }
+
+        .form-select {
+            font-family: $font-family-sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            height: 40px;
+            margin-bottom: 10px;
+            border-color: #eee;
+            border-radius: 0;
+
+            option {
+                font-weight: 300;
+            }
+        }
+
+        .story:not(:last-child) {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .story__thumb {
+            margin-bottom: 10px;
+        }
+
+        .event-list {
+            margin-left: 20px;
+        }
+    }
+}
+
+.event {
+    background: $info;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    .story__thumb {
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+
+        span {
+            font-size: 18px;
+            font-size: 1.8rem;
+            line-height: 24px;
+            line-height: 2.4rem;
+            color: #fff;
+            font-weight: 700;
+            display: block;
+            padding: 12px 20px;
+            background: $primary;
+        }
+    }
+
+    .event-list {
+        padding: 10px 20px 10px 38px;
+    }
+
+    &-list {
+        list-style-type: disc;
+        color: $secondary;
+
+        * {
+            font-family: $font-family-serif;
+            font-size: 14px;
+            font-size: 1.4rem;
+            line-height: 24px;
+            line-height: 2.4rem;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    }
 }

@@ -22,17 +22,27 @@
     </header>   <!-- end .site-header -->
 
     <div class="site-content">
-        <div class="l-grid">
-            @@include('../component/spotlight/spotlight.html')
-
-            @@include('../component/sidebar/sidebar.html')
-        </div>
+        @@include('../component/spotlight/spotlight.html')
 
         @@include('../component/multimedia/multimedia.html')
+
+        <div class="banner">
+            <a href="#"><img src="../figurations/980x90.png" alt=""></a>
+        </div>
+
+        @@include('../component/cate-list/cate-list.html')
+
+        @@include('../component/opinion/opinion.html')
+
+        @@include('../component/cate-col/cate-col.html')
+
+        <div class="banner">
+            <a href="#"><img src="../figurations/980x90.png" alt=""></a>
+        </div>
     </div>  <!-- end .site-content -->
 
     <footer class="site-footer">
-
+        @@include('../component/footer/footer.html')
     </footer>   <!-- end .site-footer -->
 
     <!-- JS -->
@@ -50,6 +60,12 @@
             autoplay: true,
             autoplaySpeed: 5000
         });
+    </script>
+
+    <!-- JS Simplyscroll -->
+    <script src="../js/jquery.simplyscroll.min.js"></script>
+    <script>
+        $("#scroller").simplyScroll();
     </script>
 </body>
 

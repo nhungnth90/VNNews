@@ -1,0 +1,75 @@
+/* ====================================
+   FOOTER
+   ==================================== */
+
+@import "../../scss/base/custom-variables";
+
+.site-footer {
+    background: $info;
+    border-radius: 5px 5px 0 0;
+
+    &__menu {
+        padding: 30px 0 15px;
+    }
+
+    &__info {
+        padding: 20px 0;
+        background: $primary;
+
+        * {
+            font-size: 13px;
+            font-size: 1.3rem;
+            color: #fff;
+        }
+
+        p {
+            line-height: 24px;
+            line-height: 2.4rem;
+        }
+
+        .link {
+            display: flex;
+            margin-left: auto;
+
+            a {
+                font-weight: 500;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.bizhub-cate {
+    margin-top: 15px;
+
+    .menu-heading {
+        width: 50%;
+        flex: inherit;
+        padding: 0 2%;
+        margin-bottom: 15px;
+    }
+}
+
+.simply-scroll-container {
+    position: relative;
+}
+
+.simply-scroll-clip {
+    position: relative;
+    overflow: hidden;
+}
+
+.simply-scroll-list {
+    li {
+        float: left;
+        margin-right: 20px;
+    }
+
+    img {
+        max-height: 42px;
+    }
+}
+
+.simply-scroll-list li {
+    list-style: none;
+}
