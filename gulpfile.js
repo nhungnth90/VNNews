@@ -32,7 +32,11 @@ var paths = {
     source_folder: "./source/" + project,
     dist_folder: "dist/" + project,
 
-    scss_component: './source/' + project + '/component/**/*.scss',
+    // scss_component: './source/' + project + '/component/**/*.scss',
+    // scss_source: './source/' + project + '/scss/**/*.scss',
+    // css_dev: './source/' + project + '/styles/css',
+    // css_dist: './dist/' + project + '/styles/css',
+
     scss_source: './source/' + project + '/scss/**/*.scss',
     css_dev: './source/' + project + '/styles/css',
     css_dist: './dist/' + project + '/styles/css',
@@ -61,7 +65,6 @@ const ignoreFiles = [
 ]
 
 
-
 // > compile scss to css
 function compile_scss_dev() {
     return src(paths.scss_source, { allowEmpty: true })
@@ -81,15 +84,14 @@ function compile_scss_dist() {
         .pipe(dest(paths.css_dist));
 };
 
-function compile_scss_component() {
-    return src(paths.scss_component, { allowEmpty: true })
-        .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(cssmin())
-        .pipe(sourcemaps.write('../maps'))
-        .pipe(dest(paths.css_dist));
-};
-
+// function compile_scss_component() {
+//     return src(paths.scss_component, { allowEmpty: true })
+//         .pipe(sourcemaps.init())
+//         .pipe(sass().on('error', sass.logError))
+//         .pipe(cssmin())
+//         .pipe(sourcemaps.write('../maps'))
+//         .pipe(dest(paths.css_dist));
+// };
 
 
 // > copy 
@@ -179,7 +181,7 @@ async function watch_dev() {
         open: true,
     });
     watch(paths.scss_source, series(compile_scss_dist, refresh_on_change));
-    watch(paths.scss_component, series(compile_scss_dist, refresh_on_change));
+    // watch(paths.scss_component, series(compile_scss_dist, refresh_on_change));
     watch(paths.js_source, series(copy_js, refresh_on_change));
     watch(paths.html_component, series(copy_html, refresh_on_change));
     watch(paths.html_source, series(copy_html, refresh_on_change));
@@ -191,14 +193,14 @@ async function watch_dev() {
 exports.dev = series(
     compile_scss_dev,
     copy_font_dev,
-    copy_html,
+    // copy_html,   // Rent ra folder gồm cả html + scss
     compress_png_dev,
 );
 
 
 exports.build = series(
     compile_scss_dist,
-    compile_scss_component,
+    // compile_scss_component,
     copy_js,
     copy_html,
     copy_fig_img,

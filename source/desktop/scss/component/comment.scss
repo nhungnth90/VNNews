@@ -1,0 +1,174 @@
+/* ====================================
+   COMMENT
+   ==================================== */
+
+@import "../bootstrap-5.1.1/mixins/clearfix";
+@import "../base/custom-variables";
+
+.zone--comment {
+    .zone__content {
+        textarea {
+            font-family: $font-family-sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            height: 100px;
+            padding: 12px 15px;
+            border-color: #eee;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .btnSubmit {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 500;
+            text-transform: uppercase;
+            background: $primary;
+            padding: 7px 32px;
+            border: none;
+            border-radius: 5px;
+            transition: all .2s ease-in-out;
+            float: right;
+
+            &:hover {
+                background: $secondary;
+            }
+        }
+
+        .btn-link {
+            font-size: 12px;
+            color: #555;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: #f7f7f7;
+            padding: 6px 20px;
+            border-radius: 20px;
+            margin: auto;
+            display: block;
+
+            &:hover {
+                background: #eee;
+            }
+        }
+    }
+
+    .wrap-comment {
+        margin-bottom: 20px;
+        @include clearfix();
+    }
+
+    .user {
+        * {
+            font-family: $font-family-sans-serif;
+            line-height: 22px;
+            color: #666;
+            font-weight: 300;
+        }
+
+        .inner-comment {
+            border-bottom: 1px solid #eee;
+
+            &:first-child .topic-comment {
+                padding-top: 0;
+            }
+        }
+
+        .topic-comment {
+            display: flex;
+            justify-content: flex-start;
+            padding: 15px 0;
+            flex-flow: wrap row;
+        }
+
+        .sub-comment {
+            margin-left: 45px;
+            padding: 5px 0 15px;
+
+            .comment {
+                display: flex;
+                justify-content: flex-start;
+                flex-flow: row wrap;
+            }
+
+            .content {
+                width: calc(100% - 74px);
+            }
+        }
+
+        .avatar-comment {
+            width: 30px;
+            height: 30px;
+            background: #f7f7f7;
+            margin-right: 15px;
+            border-radius: 50%;
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+
+            .icon-user {
+                font-size: 18px;
+                color: #555;
+            }
+        }
+
+        .content-comment {
+            width: 93.5%;
+
+            .info-author {
+                font-size: 13px;
+                margin-bottom: 3px;
+
+                span {
+                    font-weight: 500;
+                    display: inline-block;
+                    margin-right: 6px;
+                }
+
+                .time {
+                    font-weight: 300;
+                    color: #888;
+
+                    &:before {
+                        content: "▪";
+                        color: #aaa;
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            .text {
+                margin-bottom: 5px;
+            }
+        }
+
+        .action-comment {
+            a {
+                font-family: $font-family-base;
+                font-size: 13px;
+                color: #888;
+                font-weight: 400;
+                display: inline;
+                margin-right: 10px;
+
+                &:hover {
+                    color: $primary;
+                }
+
+                &.cmt-like-ed {
+                    color: $primary;
+                }
+            }
+        }
+
+        .reply {
+            margin-top: 12px;
+            @include clearfix();
+
+            .btnSubmit {
+                float: right;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

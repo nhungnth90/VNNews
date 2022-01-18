@@ -1,0 +1,92 @@
+/* ====================================
+   CATE LIST
+   ==================================== */
+
+.zone {
+    &--cate {
+        &.has-thumb {
+            .zone__content {
+                display: flex;
+            }
+
+            .focus-col {
+                width: 260px;
+                margin-right: auto;
+
+                .story:not(:last-child) {
+                    padding-bottom: 15px;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid #eee;
+                }
+
+                .story__thumb {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .story--focus {
+                width: 550px;
+
+                .story__thumb {
+                    margin-bottom: 10px;
+                }
+
+                .story__title {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &.has-text {
+            .story--focus {
+                margin-bottom: 25px;
+
+                .story__thumb {
+                    width: 492px;
+                    float: left;
+                    margin-right: 30px;
+                }
+
+                .story__title {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .row:not(:last-child) {
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid #eee;
+            }
+        }
+    }
+
+    &--column {
+        .row {
+            margin-bottom: 25px;
+
+            .story__thumb {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.cate-col {
+    .heading {
+        font-size: 20px;
+    }
+
+    .story:not(:last-child) {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .story__thumb {
+        margin-bottom: 10px;
+    }
+}

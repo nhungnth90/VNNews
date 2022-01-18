@@ -22,6 +22,10 @@
     float: right;
 }
 
+.col-160 {
+    width: 160px;
+}
+
 .site-content {
     .row {
         margin-right: calc(var(--bs-gutter-x) * -1);
@@ -70,5 +74,21 @@
         font-size: 1.3rem;
         color: #666;
         padding: 5px 0;
+    }
+}
+
+// Category
+.category {
+    .zone--cate {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #eee;
+
+        .story--focus {
+            margin-right: auto;
+        }
+
+        .focus-col {
+            margin: 0 0 0 auto;
+        }
     }
 }
