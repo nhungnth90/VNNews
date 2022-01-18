@@ -48,6 +48,12 @@
         background-position: 0 -200px;
         display: inline-block;
         vertical-align: middle;
+
+        &.large {
+            width: 28px;
+            height: 16px;
+            background-position: 0 -218px;
+        }
     }
 
     &--picture {
@@ -56,6 +62,19 @@
         background-position: -100px -200px;
         display: inline-block;
         vertical-align: middle;
+
+        &.large {
+            width: 26px;
+            height: 26px;
+            background-position: -100px -224px;
+            margin-right: 10px;
+        }
+    }
+
+    &--arrow {
+        width: 12px;
+        height: 10px;
+        background-position: -200px -200px;
     }
 }
 

@@ -1,5 +1,6 @@
 <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_425_870)">
+<path d="M211 207.75L206.832 201.498C206.436 200.904 205.564 200.904 205.168 201.498L201 207.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.2 0.2"/>
 <rect x="103" y="205.378" width="16" height="14" rx="2.8" stroke="#FCB500" stroke-width="1.5"/>
 <path d="M106.814 210.711L105.454 214.676C105.232 215.325 105.714 216 106.4 216H115.068C115.88 216 116.353 215.085 115.885 214.423L114.106 211.907C113.741 211.391 112.995 211.339 112.562 211.798L111.786 212.621C111.37 213.062 110.661 213.035 110.28 212.564L108.537 210.407C108.043 209.795 107.069 209.967 106.814 210.711Z" stroke="#FCB500" stroke-width="1.5" stroke-linecap="round"/>
 <circle cx="115" cy="209" r="1" fill="#FCB500"/>

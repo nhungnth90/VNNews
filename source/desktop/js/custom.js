@@ -14,8 +14,17 @@ $('#menu_dropdown').on('click', function() {
 });
 
 
-/*--- Tabs ---*/
-// Multimedia
+/*--- Sticky Nav ---*/
+$(window).scroll(function() {
+    if ($(window).scrollTop() >= 105) {
+        $('.site-header__nav').addClass('sticky');
+    } else {
+        $('.site-header__nav').removeClass('sticky');
+    }
+});
+
+
+/*--- Tabs Multimedia ---*/
 var tabLinks = document.querySelectorAll(".tablinks");
 var tabContent = document.querySelectorAll(".tabcontent");
 
@@ -42,4 +51,22 @@ function openTabs(el) {
 }
 
 
-/*--- News Ticker ---*/
+/*--- Simplyscroll Footer ---*/
+$("#scroller").simplyScroll();
+
+
+/*--- Back To Top ---*/
+var btn = $('#backtotop');
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 200) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+});
