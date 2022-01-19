@@ -15,6 +15,10 @@
 .l-content {
     width: 840px;
     float: left;
+
+    @include breakpoint(0, 1024px) {
+        width: 660px;
+    }
 }
 
 .sidebar {
@@ -24,6 +28,10 @@
 
 .col-160 {
     width: 160px;
+
+    @include breakpoint(0, 1024px) {
+        display: none;
+    }
 }
 
 .site-content {
@@ -79,7 +87,7 @@
 
 // Category
 .category {
-    .zone--cate {
+    .zone--cate.has-thumb {
         padding-bottom: 25px;
         border-bottom: 1px solid #eee;
 

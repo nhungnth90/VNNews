@@ -1,0 +1,57 @@
+/* ====================================
+   TOPIC
+   ==================================== */
+
+.topic {
+    .zone--cate.has-thumb {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #eee;
+
+        .story--focus {
+            margin-right: auto;
+        }
+
+        .focus-col {
+            margin: 0 0 0 auto;
+
+            .story {
+                padding: 0;
+                border: 0 none;
+            }
+        }
+    }
+
+    &__cover {
+        min-height: 250px;
+        background: url("../img/vnn_bg.png") 0 0 no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -10px 0 30px;
+        border-radius: 0 0 5px 5px;
+
+        .headline {
+            font-size: 42px;
+            font-size: 4.2rem;
+            color: #fff;
+            text-align: center;
+
+            &:before {
+                content: "";
+                display: block;
+                width: 150px;
+                margin: 0 auto 30px;
+                border-top: 1px solid rgba(255, 255, 255, .4);
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                width: 150px;
+                margin: 30px auto 0;
+                border-bottom: 1px solid rgba(255, 255, 255, .4);
+            }
+        }
+    }
+}

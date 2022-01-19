@@ -2,6 +2,8 @@
    CATE LIST
    ==================================== */
 
+@import "../mixins/mixins";
+
 .zone {
     &--cate {
         &.has-thumb {
@@ -12,6 +14,10 @@
             .focus-col {
                 width: 260px;
                 margin-right: auto;
+
+                @include breakpoint(0, 1024px) {
+                    width: 200px;
+                }
 
                 .story:not(:last-child) {
                     padding-bottom: 15px;
@@ -26,6 +32,10 @@
 
             .story--focus {
                 width: 550px;
+
+                @include breakpoint(0, 1024px) {
+                    width: 440px;
+                }
 
                 .story__thumb {
                     margin-bottom: 10px;
@@ -47,6 +57,10 @@
                     width: 492px;
                     float: left;
                     margin-right: 30px;
+
+                    @include breakpoint(0, 1024px) {
+                        width: 440px;
+                    }
                 }
 
                 .story__title {

@@ -4,6 +4,7 @@
 
 @import "../bootstrap-5.1.1/mixins/clearfix";
 @import "../base/custom-variables";
+@import "../mixins/mixins";
 
 .zone--comment {
     .zone__content {
@@ -113,7 +114,7 @@
         }
 
         .content-comment {
-            width: 93.5%;
+            width: 93%;
 
             .info-author {
                 font-size: 13px;

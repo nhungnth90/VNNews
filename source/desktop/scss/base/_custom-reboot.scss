@@ -13,6 +13,10 @@ body {
     line-height: $line-height-base;
     color: #333;
     padding: 0 20px;
+
+    @include breakpoint(0, 1024px) {
+        padding: 0;
+    }
 }
 
 h1,

@@ -3,6 +3,7 @@
    ==================================== */
 
 @import "../base/custom-variables";
+@import "../mixins/mixins";
 
 .site-header__nav {
     height: 50px;
@@ -29,6 +30,11 @@
         font-weight: 500;
         text-transform: capitalize;
         padding: 15px 20px 14px;
+
+        @include breakpoint(0, 1024px) {
+            padding-left: 11px;
+            padding-right: 11px;
+        }
 
         &:hover,
         &.active {
