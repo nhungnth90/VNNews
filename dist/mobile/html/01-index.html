@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Việt Nam News</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/css/m_vnnews.css">
+</head>
+
+<body>
+    <header class="m-header">
+        <div class="me-auto menu-dropdown">
+            <a href="#" id="menu_dropdown" class="menu-icon"><i class="spr spr--menu"></i></a>
+            <div class="dropdown-menu">
+                <div class="menu-list">
+                    <div class="menu-wrap"><a href="02-category.html" class="menu-heading">Brand-Info</a></div>
+                    <div class="menu-wrap"><a href="02-category.html" class="menu-heading">Politics & Laws</a></div>
+                    <div class="menu-wrap accordion close">
+                        <div class="accordion__heading">
+                            <a href="02-category.html" class="menu-heading">Opinion</a>
+                            <a href="#" class="accordion__item"><i class="spr spr--down"></i></a>
+                        </div>
+                        <div class="accordion_content">
+                            <a href="02-category.html" class="menu-item">In the Spotlight</a>
+                            <a href="02-category.html" class="menu-item">Op-Ed</a>
+                            <a href="02-category.html" class="menu-item">Outlook</a>
+                            <a href="02-category.html" class="menu-item">You Asked</a>
+                            <a href="02-category.html" class="menu-item">Your Say</a>
+                        </div>
+                    </div>
+                    <div class="menu-wrap accordion close">
+                        <div class="accordion__heading">
+                            <a href="02-category.html" class="menu-heading">Sunday</a>
+                            <a href="#" class="accordion__item"><i class="spr spr--down"></i></a>
+                        </div>
+                        
+                        <div class="accordion_content">
+                            <a href="02-category.html" class="menu-item">Features</a>
+                        </div>
+                    </div>
+                    <div class="menu-wrap"><a href="02-category.html" class="menu-heading">A Twist in the Tale</a></div>
+                </div>
+            </div>
+        </div>
+        <h1><a href="01-index.html" class="logo">Việt Nam News</a></h1>
+        <div class="ms-auto search-dropdown">
+            <a href="#" id="search_dropdown" class="search-icon"><i class="spr spr--search"></i></a>
+            <div class="dropdown-menu">
+                <div class="search-form">
+                    <input class="form-control" placeholder="Search keyword">
+                </div>
+            </div>
+        </div>
+    </header>   <!-- end .m-header -->
+
+    <div class="m-content">
+        
+    </div>  <!-- end .m-content -->
+
+    <footer class="m-footer">
+        
+    </footer> <!-- end .m-footer -->
+
+    <a id="backtotop"><i class="spr spr--arrow-top"></i></a>
+
+    <!-- JS -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery.simplyscroll.min.js"></script>
+
+    <!-- JS Slick -->
+    <script src="../js/slick.min.js"></script>
+    <script>
+        $('#spotlight_slick').slick({
+            arrows: false,
+            dots: true,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 5000
+        });
+    </script>
+
+    <!-- JS Custom -->
+    <script src="../js/custom.js"></script>
+</body>
+
+</html>

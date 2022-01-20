@@ -1,0 +1,68 @@
+/* ====================================
+   LAYOUT
+   ==================================== */
+
+.l-content {
+    width: 840px;
+    float: left;
+
+    @include breakpoint(0, 1024px) {
+        width: 660px;
+    }
+}
+
+.sidebar {
+    width: 300px;
+    float: right;
+}
+
+.col-160 {
+    width: 160px;
+
+    @include breakpoint(0, 1024px) {
+        display: none;
+    }
+}
+
+.site-content {
+    .row {
+        margin-right: calc(var(--bs-gutter-x) * -1);
+        margin-left: calc(var(--bs-gutter-x) * -1);
+
+        >* {
+            padding-right: calc(var(--bs-gutter-x) * 1);
+            padding-left: calc(var(--bs-gutter-x) * 1);
+        }
+    }
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.area {
+    padding: 30px 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    &--dark {
+        background: $success;
+    }
+}
+
+// Category
+.category {
+    .zone--cate.has-thumb {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #eee;
+
+        .story--focus {
+            margin-right: auto;
+        }
+
+        .focus-col {
+            margin: 0 0 0 auto;
+        }
+    }
+}

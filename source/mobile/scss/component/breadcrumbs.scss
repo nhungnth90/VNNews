@@ -1,0 +1,60 @@
+/* ====================================
+   BREADCRUMBS
+   ==================================== */
+
+@import "../base/custom-variables";
+
+.breadcrumbs {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    background: $info;
+    border-radius: 5px;
+
+    * {
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 18px;
+        line-height: 1.8rem;
+    }
+
+    &__item {
+        text-transform: uppercase;
+        display: flex;
+        margin-right: auto;
+
+        * {
+            color: #333;
+        }
+
+        a:hover {
+            color: $primary;
+        }
+    }
+
+    &__child {
+        display: flex;
+
+        a {
+            color: #666;
+            margin-left: 10px;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                width: 4px;
+                height: 4px;
+                margin-right: 10px;
+                background: $secondary;
+                border-radius: 20px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

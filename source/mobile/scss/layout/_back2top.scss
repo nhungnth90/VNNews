@@ -1,0 +1,31 @@
+/* ====================================
+   BACK TO TOP
+   ==================================== */
+
+#backtotop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primary;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+
+    &:hover,
+    &:active {
+        background: $secondary;
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}

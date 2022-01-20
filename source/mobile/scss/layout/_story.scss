@@ -1,0 +1,83 @@
+/* ====================================
+   STORY
+   ==================================== */
+
+.story {
+    position: relative;
+    @include clearfix();
+
+    &__thumb {
+        @include thumb();
+    }
+
+    &__title {
+        font-family: $font-family-serif;
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 24px;
+        line-height: 2.4rem;
+        font-weight: 700;
+
+        &:hover {
+            color: $primary;
+        }
+
+        i {
+            margin-right: 6px;
+        }
+    }
+
+    &__meta {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 20px 15px;
+
+        .story__title {
+            color: #fff;
+        }
+
+        .story__link {
+            color: $secondary;
+        }
+    }
+
+    &__link {
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: $primary;
+        text-transform: capitalize;
+
+        &:hover {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.summary {
+    font-family: $font-family-sans-serif;
+    line-height: 24px;
+    color: #666;
+    font-weight: 300;
+
+    * {
+        font-size: 14px;
+        display: inline;
+    }
+
+    a {
+        color: $primary;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
