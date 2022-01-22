@@ -139,8 +139,8 @@
 }
 
 .play-icon {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background: rgba(0, 0, 0, .3);
     display: block;
     position: absolute;
@@ -164,8 +164,8 @@
     }
 
     &.large {
-        width: 80px;
-        height: 80px;
+        width: 64px;
+        height: 64px;
 
         .triangle {
             border-top: 12px solid transparent;
@@ -189,9 +189,10 @@
     border-radius: 3px;
 
     &.large {
-        line-height: 38px;
-        width: 40px;
-        height: 38px;
+        font-size: 22px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
         margin-right: 10px;
     }
 }

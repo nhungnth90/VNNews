@@ -95,9 +95,8 @@
 /* Dots */
 .slick-dots {
     position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translate(0, -50%);
+    right: 16px;
+    top: 13%;
 }
 
 .slick-dots li {

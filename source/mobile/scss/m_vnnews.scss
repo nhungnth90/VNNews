@@ -30,12 +30,11 @@
 
 /* component */
 @import "component/m_header.scss";
-// @import "component/nav.scss";
-// @import "component/spotlight.scss";
-// @import "component/multimedia.scss";
-// @import "component/cate-list.scss";
-// @import "component/opinion.scss";
-// @import "component/footer.scss";
+@import "component/m_spotlight.scss";
+@import "component/m_multimedia.scss";
+@import "component/m_cate-list.scss";
+@import "component/m_opinion.scss";
+@import "component/m_footer.scss";
 
 // @import "component/breadcrumbs.scss";
 // @import "component/timeline.scss";

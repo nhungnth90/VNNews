@@ -4,12 +4,21 @@
 
 @import "../base/custom-variables";
 
-.site-footer {
+.m-footer {
+    padding-top: 20px;
     background: $info;
-    border-radius: 5px 5px 0 0;
 
     &__menu {
-        padding: 30px 0 10px;
+        padding: 0 16px;
+
+        .menu-heading {
+            font-size: 16px;
+            font-size: 1.6rem;
+            color: $primary;
+            font-weight: 600;
+            display: inline-block;
+            width: 49.5%;
+        }
     }
 
     &__info {

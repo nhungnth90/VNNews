@@ -7,72 +7,59 @@
 .zone {
     &--cate {
         &.has-thumb {
-            .zone__content {
-                display: flex;
-            }
-
             .focus-col {
-                width: 260px;
-                margin-right: auto;
-
-                @include breakpoint(0, 1024px) {
-                    width: 200px;
-                }
-
                 .story:not(:last-child) {
-                    padding-bottom: 15px;
-                    margin-bottom: 15px;
+                    padding-bottom: 16px;
+                    margin-bottom: 16px;
                     border-bottom: 1px solid #eee;
                 }
 
                 .story__thumb {
-                    margin-bottom: 10px;
+                    width: 125px;
+                    float: left;
+                    margin-right: 16px;
+
+                    @include breakpoint(768px) {
+                        width: 150px;
+                    }
                 }
             }
 
             .story--focus {
-                width: 550px;
-
-                @include breakpoint(0, 1024px) {
-                    width: 440px;
-                }
+                padding-bottom: 10px;
+                margin-bottom: 16px;
+                border-bottom: 1px solid #eee;
 
                 .story__thumb {
                     margin-bottom: 10px;
                 }
 
                 .story__title {
-                    font-size: 30px;
-                    line-height: 40px;
-                    margin-bottom: 10px;
+                    font-size: 26px;
+                    line-height: 34px;
                 }
             }
         }
 
         &.has-text {
             .story--focus {
-                margin-bottom: 25px;
+                padding-bottom: 12px;
+                margin-bottom: 12px;
+                border-bottom: 1px solid #eee;
 
                 .story__thumb {
-                    width: 492px;
-                    float: left;
-                    margin-right: 30px;
-
-                    @include breakpoint(0, 1024px) {
-                        width: 440px;
-                    }
+                    margin-bottom: 10px;
                 }
 
                 .story__title {
-                    font-size: 30px;
-                    line-height: 40px;
-                    margin-bottom: 10px;
+                    font-size: 26px;
+                    line-height: 34px;
                 }
             }
 
             .row:not(:last-child) {
-                padding-bottom: 15px;
-                margin-bottom: 15px;
+                padding-bottom: 12px;
+                margin-bottom: 12px;
                 border-bottom: 1px solid #eee;
             }
         }
@@ -92,11 +79,24 @@
 .cate-col {
     .heading {
         font-size: 20px;
+
+        @include breakpoint(0, 767px) {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+
+        &:after {
+            @include breakpoint(0, 767px) {
+                content: none;
+            }
+        }
     }
 
     .story:not(:last-child) {
-        padding-bottom: 15px;
-        margin-bottom: 15px;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
         border-bottom: 1px solid #eee;
     }
 

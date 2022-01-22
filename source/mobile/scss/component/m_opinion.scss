@@ -1,0 +1,37 @@
+/* ====================================
+   OPINION
+   ==================================== */
+
+@import "../base/custom-variables";
+
+.zone--opinion {
+    margin: 0;
+
+    .zone__heading:after {
+        background: rgba(255, 255, 255, .1);
+    }
+
+    .heading {
+        color: #fff;
+        background: $success;
+        margin-right: auto;
+    }
+
+    .row:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .story {
+        &__thumb {
+            margin-bottom: 10px;
+        }
+
+        &__title {
+            color: #fff;
+        }
+
+        &__link {
+            color: $secondary;
+        }
+    }
+}

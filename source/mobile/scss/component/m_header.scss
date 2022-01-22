@@ -78,19 +78,17 @@
 }
 
 .search-dropdown {
-    position: inherit;
-
     &.active {
         .search-icon {
             background: $info;
-
-            i {
-                background-position: -100px -24px;
-            }
         }
 
         .dropdown-menu {
             display: block;
+        }
+
+        .spr--search {
+            background-position: -100px -24px;
         }
     }
 
@@ -105,12 +103,31 @@
 
     .dropdown-menu {
         left: 0;
-        padding: 20px 16px 16px;
+        right: 0;
         border: 0;
         background: $info;
+        padding: 16px;
+    }
+
+    .search-form {
+        .form-control {
+            font-size: 16px;
+            font-size: 1.6rem;
+            color: #888;
+            height: 50px;
+            padding: 0 16px;
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+        }
+
+        .btn {
+            position: absolute;
+            top: 28px;
+            right: 22px;
+        }
     }
 }
-
 
 .accordion {
     &__heading {

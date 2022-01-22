@@ -12,15 +12,11 @@
 
     &__title {
         font-family: $font-family-serif;
-        font-size: 16px;
-        font-size: 1.6rem;
-        line-height: 24px;
-        line-height: 2.4rem;
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 22px;
+        line-height: 2.2rem;
         font-weight: 700;
-
-        &:hover {
-            color: $primary;
-        }
 
         i {
             margin-right: 6px;
@@ -32,7 +28,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 0 20px 15px;
+        padding: 0 16px 16px;
 
         .story__title {
             color: #fff;
@@ -44,15 +40,10 @@
     }
 
     &__link {
-        font-size: 12px;
-        font-size: 1.2rem;
+        font-size: 13px;
+        font-size: 1.3rem;
         color: $primary;
         text-transform: capitalize;
-
-        &:hover {
-            color: $primary;
-            text-decoration: underline;
-        }
     }
 }
 

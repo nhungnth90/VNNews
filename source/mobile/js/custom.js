@@ -32,6 +32,13 @@ function toggleItem() {
 }
 
 
+/*--- Simplyscroll ---*/
+// Trending
+$("#trending_scroller").simplyScroll();
+
+// $("#scroller").simplyScroll();
+
+
 /*--- Sticky Nav ---*/
 $(window).scroll(function() {
     if ($(window).scrollTop() >= 105) {
@@ -67,10 +74,6 @@ function openTabs(el) {
 
     btn.classList.add("active");
 }
-
-
-/*--- Simplyscroll Footer ---*/
-$("#scroller").simplyScroll();
 
 
 /*--- Back To Top ---*/

@@ -3,11 +3,11 @@
    ==================================== */
 
 .zone {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     &__heading {
         position: relative;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
 
         &:after {
             content: "";
@@ -24,14 +24,14 @@
         }
 
         .heading {
-            font-size: 24px;
+            font-size: 22px;
             color: $primary;
             font-weight: 700;
             text-transform: uppercase;
             z-index: 1;
             position: relative;
             background: #fff;
-            padding-right: 20px;
+            padding-right: 16px;
 
             &::first-letter {
                 color: $secondary;
@@ -47,10 +47,6 @@
                 border-radius: 20px;
             }
         }
-
-        a:hover {
-            color: $secondary;
-        }
     }
 
     &__content {
@@ -59,7 +55,7 @@
 }
 
 .aside {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     &__heading {
         height: 50px;
@@ -68,10 +64,10 @@
         align-items: center;
         background: $primary;
         border-radius: 5px;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
 
         .heading {
-            font-size: 24px;
+            font-size: 22px;
             color: #fff;
             font-weight: 700;
             text-transform: uppercase;
@@ -95,15 +91,15 @@
 
     &--latest {
         .story:not(:last-child) {
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
             border-bottom: 1px solid #eee;
         }
 
         .story__thumb {
-            width: 110px;
+            width: 125px;
             float: left;
-            margin-right: 15px;
+            margin-right: 16px;
         }
 
         .story__title {
@@ -133,7 +129,7 @@
         }
 
         .aside__content {
-            padding: 10px 20px 20px;
+            padding: 10px 16px 20px;
         }
 
         .form-select {
@@ -141,7 +137,7 @@
             font-size: 14px;
             font-weight: 300;
             height: 40px;
-            margin-bottom: 10px;
+            margin-bottom: 16px;
             border-color: #eee;
             border-radius: 0;
 
@@ -151,25 +147,31 @@
         }
 
         .story:not(:last-child) {
-            padding-bottom: 15px;
-            margin-bottom: 15px;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
             border-bottom: 1px solid #ddd;
         }
 
         .story__thumb {
-            margin-bottom: 10px;
-        }
+            width: 125px;
+            float: left;
+            margin: 0 16px 5px 0;
 
-        .event-list {
-            margin-left: 20px;
+            @include breakpoint(768px) {
+                width: 150px;
+            }
         }
+    }
+
+    .event-list {
+        margin-left: 20px;
     }
 }
 
 .event {
     background: $info;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     .story__thumb {
         img {
@@ -177,10 +179,10 @@
         }
 
         span {
-            font-size: 18px;
-            font-size: 1.8rem;
-            line-height: 24px;
-            line-height: 2.4rem;
+            font-size: 16px;
+            font-size: 1.6rem;
+            line-height: 22px;
+            line-height: 2.2rem;
             color: #fff;
             font-weight: 700;
             display: block;
@@ -190,7 +192,7 @@
     }
 
     .event-list {
-        padding: 10px 20px 10px 38px;
+        padding: 10px 16px 10px 30px;
     }
 
     &-list {
