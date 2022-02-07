@@ -36,7 +36,7 @@ function toggleItem() {
 // Trending
 $("#trending_scroller").simplyScroll();
 
-// $("#scroller").simplyScroll();
+$("#scroller").simplyScroll();
 
 
 /*--- Sticky Nav ---*/
