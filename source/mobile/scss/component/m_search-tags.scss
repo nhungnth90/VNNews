@@ -7,9 +7,9 @@
 .advanced {
     &-search {
         background: #FFF6DE;
-        padding: 25px 20px 30px;
+        padding: 20px 16px;
         border-radius: 5px;
-        margin-bottom: 30px;
+        margin-bottom: 16px;
 
         .label {
             font-size: 24px;
@@ -17,34 +17,31 @@
             font-weight: 700;
             text-transform: uppercase;
             text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
     }
 
     &-input {
-        display: flex;
-
         .form-control {
             font-family: $font-family-sans-serif;
             font-size: 14px;
             color: #888;
             font-weight: 300;
-            width: 220px;
             height: 40px;
-            padding: 0 20px;
+            padding: 0 16px;
             border: 0 none;
             border-radius: 0;
             box-shadow: none;
         }
 
-        .me-15 {
-            margin-right: 15px;
+        .mb-10 {
+            margin-bottom: 10px;
             position: relative;
         }
 
         .spr--calendar {
             position: absolute;
-            right: 10px;
+            right: 6px;
             top: 10px;
         }
 
@@ -56,33 +53,27 @@
             text-transform: uppercase;
             background: $secondary;
             padding: 7px 18px;
-            border-radius: 5px;
-
-            &:hover {
-                background: $primary;
-            }
+            display: block;
         }
     }
 }
 
 .keyword {
-    padding-bottom: 10px;
-    margin-bottom: 25px;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
     border-bottom: 1px solid #eee;
-    display: flex;
-    align-items: center;
 
     label {
-        font-size: 24px;
-        font-size: 2.4rem;
+        font-size: 22px;
+        font-size: 2.2rem;
         font-weight: 700;
         text-transform: uppercase;
         margin-right: 10px;
     }
 
     span {
-        font-size: 20px;
-        font-size: 2rem;
+        font-size: 18px;
+        font-size: 1.8rem;
         color: $secondary;
         text-transform: capitalize;
     }

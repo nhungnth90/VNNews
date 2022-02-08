@@ -32,6 +32,10 @@
             @include breakpoint(0, 320px) {
                 width: 66%;
             }
+
+            @include breakpoint(768px) {
+                width: 85%;
+            }
         }
 
         &-clip {

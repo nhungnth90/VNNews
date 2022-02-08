@@ -36,15 +36,16 @@ function toggleItem() {
 // Trending
 $("#trending_scroller").simplyScroll();
 
-$("#scroller").simplyScroll();
+// Footer
+$("#footer_scroller").simplyScroll();
 
 
 /*--- Sticky Nav ---*/
 $(window).scroll(function() {
-    if ($(window).scrollTop() >= 105) {
-        $('.site-header__nav').addClass('sticky');
+    if ($(window).scrollTop() >= 50) {
+        $('.m-header').addClass('sticky');
     } else {
-        $('.site-header__nav').removeClass('sticky');
+        $('.m-header').removeClass('sticky');
     }
 });
 

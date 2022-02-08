@@ -19,10 +19,6 @@
     visibility: hidden;
     z-index: 1000;
 
-    &:active {
-        background: $secondary;
-    }
-
     &.show {
         opacity: 1;
         visibility: visible;

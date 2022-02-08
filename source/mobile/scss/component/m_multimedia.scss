@@ -10,6 +10,11 @@
     background: $success;
     z-index: 1;
 
+    @include breakpoint(768px) {
+        float: right;
+        margin-top: 3px;
+    }
+
     .tablinks {
         color: #fff;
         font-weight: 700;

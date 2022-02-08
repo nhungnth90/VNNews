@@ -3,7 +3,7 @@
    ==================================== */
 
 .zone {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 
     &__heading {
         position: relative;
@@ -55,7 +55,7 @@
 }
 
 .aside {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 
     &__heading {
         height: 50px;
@@ -100,6 +100,10 @@
             width: 125px;
             float: left;
             margin-right: 16px;
+
+            @include breakpoint(768px) {
+                width: 150px;
+            }
         }
 
         .story__title {

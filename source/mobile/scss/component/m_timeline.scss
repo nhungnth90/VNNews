@@ -6,34 +6,34 @@
 @import "../mixins/mixins";
 
 .timeline {
-    width: 650px;
-    margin: 0 auto 30px 0;
-
-    @include breakpoint(0, 1024px) {
-        width: 100%;
-    }
+    margin-bottom: 16px;
 
     .story {
-        padding-bottom: 30px;
-        margin-bottom: 30px;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
         border-bottom: 1px solid #eee;
     }
 
-    .story__thumb {
-        width: 260px;
-        float: left;
-        margin-right: 25px;
+    .story__title {
+        font-size: 16px;
+        line-height: 24px;
     }
 
-    .story__title {
-        font-size: 22px;
-        line-height: 30px;
-        margin-bottom: 10px;
+    .story__thumb {
+        width: 125px;
+        float: left;
+        margin-right: 16px;
+
+        @include breakpoint(768px) {
+            width: 150px;
+        }
     }
 }
 
 .pag {
-    display: flex;
+    .pagination {
+        justify-content: center;
+    }
 
     .page-item.active .page-link {
         color: #fff;
@@ -53,26 +53,17 @@
         justify-content: center;
         border: 0 none;
         border-radius: 50% !important;
-
-        &:hover {
-            background: #eee;
-        }
     }
 }
 
 .sort {
     font-size: 12px;
     font-size: 1.2rem;
-    color: #222;
-    margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 140px;
+    height: 40px;
     background: $info;
+    margin-top: 16px;
     border-radius: 20px;
-
-    &:hover {
-        background: #eee;
-    }
 }

@@ -17,12 +17,13 @@
             color: $primary;
             font-weight: 600;
             display: inline-block;
-            width: 49.5%;
+            width: 49%;
         }
     }
 
     &__info {
-        padding: 60px 0 20px;
+        text-align: center;
+        padding: 16px;
         background: $primary;
 
         * {
@@ -37,50 +38,41 @@
         }
 
         .link {
-            display: flex;
-            margin-left: auto;
+            padding-top: 16px;
+            margin-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, .2);
 
             a {
                 font-weight: 500;
-                margin-left: 20px;
+                display: inline;
+                margin: 0 10px;
             }
         }
     }
-}
 
-.bizhub-cate {
-    margin-top: 15px;
-
-    .menu-heading {
-        width: 50%;
-        flex: inherit;
-        padding: 0 2%;
-        margin-bottom: 15px;
-    }
-}
-
-.simply-scroll {
-    &-container {
-        position: relative;
-        background: #fff;
-        padding: 16px;
-    }
-
-    &-clip {
-        position: relative;
-        height: 42px;
-        overflow: hidden;
-    }
-
-    &-list {
-        li {
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 20px;
+    .simply-scroll {
+        &-container {
+            position: relative;
+            background: #fff;
+            padding: 16px;
         }
 
-        img {
-            max-height: 42px;
+        &-clip {
+            position: relative;
+            height: 42px;
+            overflow: hidden;
+        }
+
+        &-list {
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 20px;
+            }
+
+            img {
+                max-height: 42px;
+            }
         }
     }
 }
