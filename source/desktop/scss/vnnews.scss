@@ -3,17 +3,14 @@
    ==================================== */
 
 @import "base/custom-variables";
-@import "bootstrap-5.1.1/bootstrap.scss";
-
+@import "component/bootstrap.scss";
 
 /* utilities */
 @import "mixins/mixins";
 
-
 /* base */
 @import "base/custom-reboot";
 @import "base/fonts";
-
 
 /* layout */
 @import "layout/layout";
@@ -22,11 +19,9 @@
 @import "layout/icons";
 @import "layout/back2top";
 
-
 /* plugins */
 @import "plugins/slick.css";
 @import "plugins/slick-theme.css";
-
 
 /* component */
 @import "component/header.scss";
@@ -36,13 +31,11 @@
 @import "component/cate-list.scss";
 @import "component/opinion.scss";
 @import "component/footer.scss";
-
 @import "component/breadcrumbs.scss";
 @import "component/timeline.scss";
-
 @import "component/detail.scss";
 @import "component/comment.scss";
-
 @import "component/search-tags.scss";
 @import "component/topic.scss";
+@import "component/about-us.scss";
 

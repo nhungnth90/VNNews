@@ -9,6 +9,7 @@
     display: flex;
     background: $success;
     z-index: 1;
+    margin-left: auto;
 
     .tablinks {
         color: #fff;
@@ -63,7 +64,6 @@
     .heading {
         color: #fff;
         background: $success;
-        margin-right: auto;
     }
 
     .story--focus {
@@ -129,5 +129,15 @@
                 color: $secondary;
             }
         }
+    }
+}
+
+.multimedia {
+    .story {
+        margin-bottom: 25px;
+    }
+
+    .story__thumb {
+        margin-bottom: 10px;
     }
 }

@@ -70,3 +70,13 @@ btn.on('click', function(e) {
     e.preventDefault();
     $('html, body').scrollTop(0);
 });
+
+
+/*--- Modal Comment ---*/
+document.querySelector('.modal-cmt').onclick = function() {
+    document.querySelector('.modal').classList.toggle('show');
+}
+
+document.getElementById('close').onclick = function() {
+    document.querySelector('.modal').classList.toggle('show');
+}

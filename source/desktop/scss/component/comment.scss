@@ -8,15 +8,23 @@
 
 .zone--comment {
     .zone__content {
-        textarea {
+        .form-control {
             font-family: $font-family-sans-serif;
             font-size: 16px;
             font-weight: 300;
-            height: 100px;
             padding: 12px 15px;
-            border-color: #eee;
-            border-radius: 5px;
-            margin-bottom: 1rem;
+            height: 38px;
+            border-color: #ddd;
+        }
+
+        textarea.form-control {
+            height: 100px;
+        }
+
+        .form-text {
+            font-size: 14px;
+            color: #dc3545;
+            margin-top: 5px;
         }
 
         .btnSubmit {
@@ -170,6 +178,39 @@
                 float: right;
                 margin-top: 1rem;
             }
+        }
+    }
+}
+
+// Modal
+.modal {
+    display: none;
+    background-color: #00000063;
+    padding-top: 100px;
+
+    &.show {
+        display: block !important;
+    }
+}
+
+#modal_cmt {
+    padding: 15px 20px;
+
+    .modal-header {
+        background: $secondary;
+        border: 0 none;
+        padding: 12px 18px;
+    }
+
+    .modal-body {
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-size: 16px;
+            text-align: center;
         }
     }
 }

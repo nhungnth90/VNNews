@@ -1,0 +1,45 @@
+/* ====================================
+   ABOUT US
+   ==================================== */
+
+.about-us {
+    margin-bottom: 30px;
+
+    &__img {
+        width: 50%;
+        float: left;
+        margin-right: 25px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__calendar {
+        font-size: 16px;
+        padding: 0 15px 15px;
+        background: #fff7d3;
+        border: 1px solid #feecb6;
+
+        .row {
+            padding: 18px;
+            margin-bottom: 20px;
+            background: #feecb6;
+            border-bottom: 1px solid #FFE28C;
+
+            .col-md-4 {
+                padding: 0;
+            }
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        strong {
+            width: 120px;
+            display: inline-block;
+            font-weight: 600;
+        }
+    }
+}

@@ -32,11 +32,6 @@ var paths = {
     source_folder: "./source/" + project,
     dist_folder: "dist/" + project,
 
-    // scss_component: './source/' + project + '/component/**/*.scss',
-    // scss_source: './source/' + project + '/scss/**/*.scss',
-    // css_dev: './source/' + project + '/styles/css',
-    // css_dist: './dist/' + project + '/styles/css',
-
     scss_source: './source/' + project + '/scss/**/*.scss',
     css_dev: './source/' + project + '/styles/css',
     css_dist: './dist/' + project + '/styles/css',
@@ -84,15 +79,6 @@ function compile_scss_dist() {
         .pipe(dest(paths.css_dist));
 };
 
-// function compile_scss_component() {
-//     return src(paths.scss_component, { allowEmpty: true })
-//         .pipe(sourcemaps.init())
-//         .pipe(sass().on('error', sass.logError))
-//         .pipe(cssmin())
-//         .pipe(sourcemaps.write('../maps'))
-//         .pipe(dest(paths.css_dist));
-// };
-
 
 // > copy 
 async function copy_js() {
@@ -101,11 +87,7 @@ async function copy_js() {
 };
 
 async function copy_html() {
-    return src([paths.html_source, ignoreFiles.join()])
-        .pipe(fileinclude({
-            prefix: '@@',
-            basepath: '@file'
-        }))
+    return src(paths.html_source)
         .pipe(dest(paths.html_dist));
 };
 
@@ -125,32 +107,18 @@ async function copy_font_dist() {
 };
 
 
-
 // > compress PNG
 async function compress_png_dev() {
     return imagemin([paths.img_source], {
         destination: paths.img_dev,
-        plugins: [
-            imageminJpegtran(),
-            imageminPngquant({
-                quality: [0.6, 0.8]
-            })
-        ]
     });
 };
 
 async function compress_png_dist() {
     return imagemin([paths.img_source], {
         destination: paths.img_dist,
-        plugins: [
-            imageminJpegtran(),
-            imageminPngquant({
-                quality: [0.6, 0.8]
-            })
-        ]
     });
 };
-
 
 
 // > refresh on change
@@ -159,23 +127,13 @@ async function refresh_on_change(cb) {
     cb()
 };
 
-gulp.task('fileinclude', function () {
-    gulp.src([paths.html_component])
-        .pipe(fileinclude({
-            prefix: '@@',
-            basepath: '@file'
-        }))
-        .pipe(gulp.dest('dist'));
-});
-
-
 
 // Watch files
 async function watch_dev() {
     browserSync.init({
         server: "./",
-        // startPath: "dist/desktop/html/01-index.html",
-        startPath: "dist/mobile/html/01-index.html",
+        startPath: "dist/desktop/html/01-index.html",
+        // startPath: "dist/mobile/html/01-index.html",
         browser: 'chrome',
         host: 'localhost',
         port: 3000,
