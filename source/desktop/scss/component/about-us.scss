@@ -1,6 +1,9 @@
 /* ====================================
-   ABOUT US
+   ABOUT US / CONTACT US / RSS
    ==================================== */
+
+@import "../bootstrap-5.1.1/mixins/clearfix";
+@import "../base/custom-variables";
 
 .about-us {
     margin-bottom: 30px;
@@ -9,10 +12,6 @@
         width: 50%;
         float: left;
         margin-right: 25px;
-
-        img {
-            max-width: 100%;
-        }
     }
 
     &__calendar {
@@ -41,5 +40,64 @@
             display: inline-block;
             font-weight: 600;
         }
+    }
+}
+
+// Contact Us
+.contact {
+    margin-bottom: 30px;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #eee;
+    }
+
+    &__focus {
+        margin-bottom: 20px;
+        @include clearfix();
+
+        h4 {
+            font-size: 20px;
+            color: $primary;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        height: 236px;
+        float: left;
+        margin-right: 25px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: inherit;
+            height: 300px;
+        }
+    }
+}
+
+// RSS
+.rss {
+    margin-bottom: 50px;
+
+    li {
+        margin-bottom: 5px;
+
+        a {
+            font-weight: 500;
+        }
+    }
+
+    i {
+        margin-right: 10px;
     }
 }

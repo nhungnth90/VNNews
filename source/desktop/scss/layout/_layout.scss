@@ -85,7 +85,6 @@
     }
 }
 
-// Category
 .category {
     .zone--cate.has-thumb {
         padding-bottom: 25px;
@@ -101,7 +100,6 @@
     }
 }
 
-// About Us
 .l-text {
     * {
         font-family: $font-family-sans-serif;
@@ -111,7 +109,31 @@
         font-weight: 300;
     }
 
+    div,
     p {
         margin-bottom: 30px;
+    }
+
+    strong {
+        font-weight: 500;
+    }
+
+    a {
+        display: inline;
+        color: $primary;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Modal
+.modal {
+    display: none;
+    background-color: #00000063;
+
+    &.show {
+        display: block !important;
     }
 }

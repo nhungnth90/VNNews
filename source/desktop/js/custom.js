@@ -72,8 +72,8 @@ btn.on('click', function(e) {
 });
 
 
-/*--- Modal Comment ---*/
-document.querySelector('.modal-cmt').onclick = function() {
+/*--- Modal ---*/
+document.querySelector('.modal-btn').onclick = function() {
     document.querySelector('.modal').classList.toggle('show');
 }
 
