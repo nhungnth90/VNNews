@@ -134,6 +134,38 @@
                     }
                 }
             }
+
+            table.video,
+            table.embed {
+                td {
+                    border: 0 none;
+                    padding: 0;
+                }
+
+                div,
+                p {
+                    margin: 0;
+                }
+
+                .caption {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #666;
+                    padding-top: 10px;
+
+                    * {
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #666;
+                        display: inline;
+                    }
+
+                    div,
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
         }
 
         .fb-likeshare {
