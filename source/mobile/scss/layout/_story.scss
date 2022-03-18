@@ -72,3 +72,22 @@
         }
     }
 }
+
+.form-text {
+    font-size: 14px;
+    color: #dc3545;
+    margin-top: 5px;
+}
+
+.btnSubmit {
+    font-size: 14px;
+    color: #fff !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    background: $primary;
+    padding: 7px 32px;
+    border: none;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    float: right;
+}

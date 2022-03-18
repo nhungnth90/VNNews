@@ -13,6 +13,11 @@ $('#search_dropdown').on('click', function() {
     $('.search-dropdown').toggleClass("active");
 });
 
+// Category
+$('#expand_btn').on('click', function() {
+    $('.expand-child').toggleClass("active");
+});
+
 
 /*--- Accordion ---*/
 var accItem = document.getElementsByClassName('menu-wrap accordion');
@@ -92,3 +97,13 @@ btn.on('click', function(e) {
     e.preventDefault();
     $('html, body').scrollTop(0);
 });
+
+
+/*--- Modal ---*/
+document.querySelector('.modal-btn').onclick = function() {
+    document.querySelector('.modal').classList.toggle('show');
+}
+
+document.getElementById('close').onclick = function() {
+    document.querySelector('.modal').classList.toggle('show');
+}

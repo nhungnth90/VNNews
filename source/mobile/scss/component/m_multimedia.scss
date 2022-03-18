@@ -117,3 +117,19 @@
         }
     }
 }
+
+.multimedia {
+    margin-bottom: 16px;
+
+    .story {
+        margin-bottom: 16px;
+
+        @include breakpoint(768px) {
+            width: 33.33%;
+        }
+    }
+
+    .story__thumb {
+        margin-bottom: 10px;
+    }
+}

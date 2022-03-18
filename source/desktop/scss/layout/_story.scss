@@ -90,8 +90,8 @@
 
 .btnSubmit {
     font-size: 14px;
-    color: #fff;
-    font-weight: 500;
+    color: #fff !important;
+    font-weight: 500 !important;
     text-transform: uppercase;
     background: $primary;
     padding: 7px 32px;

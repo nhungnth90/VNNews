@@ -1,0 +1,118 @@
+/* ====================================
+   ABOUT US / CONTACT US / RSS
+   ==================================== */
+
+@import "../bootstrap-5.1.1/mixins/clearfix";
+@import "../base/custom-variables";
+@import "../mixins/mixins";
+
+.zone--outlook {
+    .story {
+        margin-bottom: 16px;
+    }
+
+    .story__thumb {
+        height: 240px;
+        margin-bottom: 10px;
+    }
+
+    .datetime {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+
+    }
+
+    .btn {
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: $primary;
+        padding: 6px 20px;
+        border-radius: 20px;
+        margin: auto;
+        display: block;
+    }
+
+    .row-cols-2 {
+        border-bottom: 1px solid #eee;
+        margin-bottom: 16px;
+
+        &>* {
+            @include breakpoint(768px) {
+                width: 25%;
+            }
+        }
+    }
+}
+
+.aside--outlook {
+    .heading {
+        font-size: 18px;
+    }
+
+    .aside__content {
+        padding-top: 16px !important;
+
+        ul {
+            li {
+                margin-bottom: 10px;
+            }
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        a {
+            display: inline;
+            color: $primary;
+        }
+    }
+}
+
+// Modal - Outlook
+.modal-outlook {
+    .modal-header {
+        padding: 10px 20px;
+        background: $secondary;
+        border: 0 none;
+    }
+
+    .modal-title {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .modal-body {
+        padding: 20px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .form-control {
+        font-family: $font-family-sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 12px 15px;
+        height: 38px;
+        border-color: #ddd;
+    }
+}
+
+.outlook-login {
+    padding: 20px;
+    margin-top: 20px;
+    background: #fff7d3;
+    border: 1px solid #feecb6;
+    @include clearfix();
+}

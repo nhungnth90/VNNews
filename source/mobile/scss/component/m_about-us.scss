@@ -1,0 +1,113 @@
+/* ====================================
+   ABOUT US / CONTACT US / RSS
+   ==================================== */
+
+@import "../bootstrap-5.1.1/mixins/clearfix";
+@import "../base/custom-variables";
+@import "../mixins/mixins";
+
+.about-us {
+    margin-bottom: 16px;
+
+    .mb-4 {
+        @include breakpoint(768px) {
+            width: 50%;
+            float: left;
+            margin-right: 20px;
+        }
+    }
+
+    &__calendar {
+        font-size: 16px;
+        padding: 0 10px 10px;
+        background: #fff7d3;
+        border: 1px solid #feecb6;
+
+        .row {
+            padding: 16px 6px;
+            margin-bottom: 16px;
+            background: #feecb6;
+            border-bottom: 1px solid #FFE28C;
+
+            .col-md-4 {
+                margin-bottom: 10px;
+            }
+        }
+
+        ul {
+            margin: 0 4px;
+
+            li {
+                margin-bottom: 8px;
+            }
+        }
+
+        strong {
+            display: block;
+            font-weight: 600;
+
+            @include breakpoint(768px) {
+                width: 120px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// Contact Us
+.contact {
+    margin-bottom: 16px;
+
+    &__focus {
+        margin-bottom: 16px;
+        @include clearfix();
+
+        h4 {
+            font-size: 20px;
+            color: $primary;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    &__img {
+        height: 255px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint(768px) {
+            width: 50%;
+            float: left;
+            margin: 0 20px 0 0;
+        }
+
+        img {
+            max-width: inherit;
+        }
+    }
+}
+
+// RSS
+.rss {
+    margin-bottom: 16px;
+
+    li {
+        margin-bottom: 5px;
+
+        a {
+            font-weight: 500;
+        }
+    }
+
+    i {
+        margin-right: 10px;
+    }
+}
