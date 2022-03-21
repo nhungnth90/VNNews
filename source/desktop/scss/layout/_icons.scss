@@ -3,7 +3,7 @@
    ==================================== */
 
 .spr {
-    background: url("../img/vnn_sprites.svg?v=1.1") no-repeat;
+    background: url("../img/vnn_sprites.svg?v=1.2") no-repeat;
     background-size: 400px 500px;
     display: block;
 
@@ -143,6 +143,12 @@
         background-position: 0 -400px;
         display: inline-block;
         vertical-align: middle;
+    }
+
+    &--ig {
+        width: 16px;
+        height: 16px;
+        background-position: -100px -400px;
     }
 }
 

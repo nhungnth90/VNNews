@@ -132,8 +132,8 @@ async function refresh_on_change(cb) {
 async function watch_dev() {
     browserSync.init({
         server: "./",
-        startPath: "dist/desktop/html/01-index.html",
-        // startPath: "dist/mobile/html/01-index.html",
+        // startPath: "dist/desktop/html/01-index.html",
+        startPath: "dist/mobile/html/01-index.html",
         browser: 'chrome',
         host: 'localhost',
         port: 3000,

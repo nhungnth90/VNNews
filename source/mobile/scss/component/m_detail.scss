@@ -3,6 +3,7 @@
    ==================================== */
 
 @import "../base/custom-variables";
+@import "../mixins/mixins";
 
 .detail {
     &__header {
@@ -135,8 +136,7 @@
                 }
             }
 
-            table.video,
-            table.embed {
+            table.video {
                 td {
                     border: 0 none;
                     padding: 0;
@@ -163,6 +163,59 @@
                     div,
                     p {
                         margin-bottom: 0;
+                    }
+                }
+            }
+
+            // Gallery
+            .gallery-slick {
+
+                div,
+                p {
+                    margin-bottom: 0;
+                }
+
+                .slider-for {
+                    .slick-slide {
+                        display: flex;
+                        height: 255px;
+
+                        @include breakpoint(768px) {
+                            height: 433px;
+                        }
+
+                        &:after {
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            background: linear-gradient(to top, #000 -35%, rgba(255, 255, 255, 0) 65%);
+                        }
+                    }
+
+                    .caption {
+                        color: #fff;
+                        position: absolute;
+                        bottom: 0;
+                        padding: 0 20px 15px 20px;
+                        z-index: 1;
+                    }
+                }
+
+                .slider-nav {
+                    padding: 10px;
+                    background: #000;
+
+                    .slick-slide {
+                        opacity: .5;
+                        border: 2px solid transparent;
+                    }
+
+                    .slick-current {
+                        opacity: 1;
+                        border-color: $secondary;
                     }
                 }
             }
