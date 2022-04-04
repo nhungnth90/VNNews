@@ -180,6 +180,11 @@
     }
 
     .story__thumb {
+        height: 120px;
         margin-bottom: 10px;
+
+        @include breakpoint(768px) {
+            height: 240px;
+        }
     }
 }

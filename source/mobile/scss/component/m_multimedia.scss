@@ -70,7 +70,12 @@
         border-bottom: 1px solid rgba(255, 255, 255, .1);
 
         .story__thumb {
+            height: 215px;
             margin-bottom: 10px;
+
+            @include breakpoint(768px) {
+                height: 414px;
+            }
         }
 
         .story__title {
@@ -104,6 +109,7 @@
 
         .story__thumb {
             width: 125px;
+            max-height: 100px;
             float: left;
             margin-right: 16px;
 
@@ -130,6 +136,11 @@
     }
 
     .story__thumb {
+        height: 120px;
         margin-bottom: 10px;
+
+        @include breakpoint(768px) {
+            height: 153px;
+        }
     }
 }

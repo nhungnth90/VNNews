@@ -2,6 +2,8 @@
    TOPIC
    ==================================== */
 
+@import "../mixins/mixins";
+
 .topic {
     .zone--cate.has-thumb {
         border-bottom: 5px solid #f7f7f7;
@@ -14,8 +16,13 @@
 
             .story__thumb {
                 width: 100%;
+                max-height: 120px;
                 float: none;
                 margin: 0 0 8px;
+
+                @include breakpoint(768px) {
+                    max-height: 238px;
+                }
             }
         }
     }

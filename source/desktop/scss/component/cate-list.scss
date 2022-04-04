@@ -26,6 +26,7 @@
                 }
 
                 .story__thumb {
+                    height: 173px;
                     margin-bottom: 10px;
                 }
             }
@@ -38,6 +39,7 @@
                 }
 
                 .story__thumb {
+                    height: 366px;
                     margin-bottom: 10px;
                 }
 
@@ -55,11 +57,13 @@
 
                 .story__thumb {
                     width: 492px;
+                    height: 328px;
                     float: left;
                     margin-right: 30px;
 
                     @include breakpoint(0, 1024px) {
                         width: 440px;
+                        height: 293px;
                     }
                 }
 
@@ -83,6 +87,7 @@
             margin-bottom: 25px;
 
             .story__thumb {
+                height: 173px;
                 margin-bottom: 10px;
             }
         }
@@ -101,6 +106,7 @@
     }
 
     .story__thumb {
+        height: 180px;
         margin-bottom: 10px;
     }
 }

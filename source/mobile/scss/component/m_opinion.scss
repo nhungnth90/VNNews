@@ -3,6 +3,7 @@
    ==================================== */
 
 @import "../base/custom-variables";
+@import "../mixins/mixins";
 
 .zone--opinion {
     margin: 0;
@@ -23,7 +24,12 @@
 
     .story {
         &__thumb {
+            height: 120px;
             margin-bottom: 10px;
+
+            @include breakpoint(768px) {
+                height: 240px;
+            }
         }
 
         &__title {
