@@ -30,18 +30,10 @@
 
     .btn {
         font-size: 12px;
-        color: #fff;
         text-transform: uppercase;
-        text-decoration: none;
-        background: $primary;
         padding: 6px 20px;
         border-radius: 20px;
-        margin: auto;
         display: block;
-
-        &:hover {
-            background: #004f8b;
-        }
     }
 
     .row-cols-4 {

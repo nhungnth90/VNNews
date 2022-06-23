@@ -90,8 +90,17 @@
             p,
             table,
             h2,
-            h3 {
+            h3,
+            ul,
+            ol,
+            blockquote {
                 margin-bottom: 30px;
+            }
+
+            ul,
+            ol {
+                list-style: revert;
+                padding-left: 2rem;
             }
 
             img {
@@ -114,6 +123,13 @@
                 &:hover {
                     text-decoration: underline;
                 }
+            }
+
+            strong,
+            b,
+            strong *,
+            b * {
+                font-weight: 500;
             }
 
             table td {
@@ -150,6 +166,32 @@
                         margin-bottom: 0;
                     }
                 }
+
+                &[align="left"] {
+                    width: 33.33%;
+                    float: left;
+                    margin-right: 30px;
+                    background: #f7f7f7;
+
+                    .caption {
+                        padding: 10px 15px 15px;
+                    }
+                }
+
+                &[align="right"] {
+                    width: 33.33%;
+                    float: right;
+                    margin-left: 30px;
+                    background: #f7f7f7;
+
+                    .caption {
+                        padding: 10px 15px 15px;
+                    }
+                }
+
+                &-cols .pic {
+                    padding: 2px;
+                }
             }
 
             table.video {
@@ -180,6 +222,50 @@
                     p {
                         margin-bottom: 0;
                     }
+                }
+            }
+
+            blockquote {
+                font-style: italic;
+                color: #555;
+                padding: 20px 30px 20px 60px;
+                border-left: 2px solid $secondary;
+                line-height: 1.6;
+                position: relative;
+                background: #f7f7f7;
+
+                &:before {
+                    font-family: Arial;
+                    content: "\201C";
+                    color: $secondary;
+                    font-size: 4em;
+                    position: absolute;
+                    left: 10px;
+                    top: -10px;
+                }
+
+                &:after {
+                    content: '';
+                }
+
+                span {
+                    display: block;
+                    font-size: 16px;
+                    color: #333;
+                    font-weight: 500;
+                    margin-top: 10px;
+                }
+
+                &.qleft {
+                    width: 50%;
+                    float: left;
+                    margin-right: 30px;
+                }
+
+                &.qright {
+                    width: 50%;
+                    float: right;
+                    margin-left: 30px;
                 }
             }
 
@@ -279,6 +365,10 @@
         .highlight:after,
         .zone--highlight .zone__heading .heading {
             background: $primary;
+        }
+
+        .zone--highlight .row-cols-3 .story {
+            margin-bottom: 25px;
         }
     }
 }

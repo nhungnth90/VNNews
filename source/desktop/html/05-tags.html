@@ -51,17 +51,17 @@
                 <a href="02-category.html" class="nav-item">Environment</a>
                 <a href="02-category.html" class="nav-item">Opinion</a>
                 <div class="nav-ultilites">
-                    <div class="search">
-                        <a href="#" class="search-icon"><i class="spr spr--search"></i></a>
+                    <div class="position-relative">
                         <div class="search-form">
                             <input class="form-control" placeholder="Search keyword">
+                            <a href="#" class="search-icon"><i class="spr spr--search"></i></a>
                         </div>
-                    </div>
-                    <div class="social">
-                        <a href="#" class="social-item" title="Facebook"><i class="spr spr--fb"></i></a>
-                        <a href="#" class="social-item" title="Twitter"><i class="spr spr--tt"></i></a>
-                        <a href="#" class="social-item" title="Youtube"><i class="spr spr--yt"></i></a>
-                        <a href="#" class="social-item" title="Instagram"><i class="spr spr--ig"></i></a>
+                        <div class="social">
+                            <a href="#" class="social-item" title="Facebook"><i class="spr spr--fb"></i></a>
+                            <a href="#" class="social-item" title="Twitter"><i class="spr spr--tt"></i></a>
+                            <a href="#" class="social-item" title="Youtube"><i class="spr spr--yt"></i></a>
+                            <a href="#" class="social-item" title="Instagram"><i class="spr spr--ig"></i></a>
+                        </div>
                     </div>
                     <div class="dropdown">
                         <a href="#" class="menu-icon" id="menu_dropdown"><i class="spr spr--menu"></i></a>
@@ -241,35 +241,69 @@
                     <a href="#"><img src="../figurations/300x250.png" alt=""></a>
                 </div>
                 <section class="aside aside--latest">
-                    <header class="aside__heading">
-                        <h3 class="heading">Latest</h3>
-                    </header>
-                    <div class="aside__content">
-                        <article class="story">
-                            <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=4" alt="110x73 (3:2)"></a>
-                            <h2><a href="03-detail.html" class="story__title">Season 3 of “Whose Chance?” reality show on jobs airs on VTV3</a></h2>
-                            <div class="number">1.</div>
-                        </article>
-                        <article class="story">
-                            <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=3" alt="110x73 (3:2)"></a>
-                            <h2><a href="03-detail.html" class="story__title">Hà Nội promotes organic farming, cuts use of pesticides</a></h2>
-                            <div class="number">2.</div>
-                        </article>
-                        <article class="story">
-                            <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=2" alt="110x73 (3:2)"></a>
-                            <h2><a href="03-detail.html" class="story__title">HCM City issues COVID safety criteria for enterprises</a></h2>
-                            <div class="number">3.</div>
-                        </article>
-                        <article class="story">
-                            <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=1" alt="110x73 (3:2)"></a>
-                            <h2><a href="03-detail.html" class="story__title">Foreign tourists can visit Việt Nam this month</a></h2>
-                            <div class="number">4.</div>
-                        </article>
-                        <article class="story">
-                            <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=5" alt="110x73 (3:2)"></a>
-                            <h2><a href="03-detail.html" class="story__title">Some Hà Nội schools to resume in-classroom teaching from November 8</a></h2>
-                            <div class="number">5.</div>
-                        </article>
+                    <ul class="nav nav-tabs" id="latestTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="latest-tab" data-bs-toggle="tab" data-bs-target="#latest" type="button" role="tab" aria-controls="latest" aria-selected="true">Latest</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="mostread-tab" data-bs-toggle="tab" data-bs-target="#mostread" type="button" role="tab" aria-controls="mostread" aria-selected="false">Most read</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+                            <article class="story">
+                                <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=4" alt="110x73 (3:2)"></a>
+                                <h2><a href="03-detail.html" class="story__title">Season 3 of “Whose Chance?” reality show on jobs airs on VTV3</a></h2>
+                                <div class="number">1.</div>
+                            </article>
+                            <article class="story">
+                                <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=3" alt="110x73 (3:2)"></a>
+                                <h2><a href="03-detail.html" class="story__title">Hà Nội promotes organic farming, cuts use of pesticides</a></h2>
+                                <div class="number">2.</div>
+                            </article>
+                            <article class="story">
+                                <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=2" alt="110x73 (3:2)"></a>
+                                <h2><a href="03-detail.html" class="story__title">HCM City issues COVID safety criteria for enterprises</a></h2>
+                                <div class="number">3.</div>
+                            </article>
+                            <article class="story">
+                                <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=1" alt="110x73 (3:2)"></a>
+                                <h2><a href="03-detail.html" class="story__title">Foreign tourists can visit Việt Nam this month</a></h2>
+                                <div class="number">4.</div>
+                            </article>
+                            <article class="story">
+                                <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=5" alt="110x73 (3:2)"></a>
+                                <h2><a href="03-detail.html" class="story__title">Some Hà Nội schools to resume in-classroom teaching from November 8</a></h2>
+                                <div class="number">5.</div>
+                            </article>
+                        </div>
+                        <div class="tab-pane fade" id="mostread" role="tabpanel" aria-labelledby="mostread-tab">
+                            <article class="story">
+                                <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=4" alt="110x73 (3:2)"></a>
+                                <h2><a href="03-detail.html" class="story__title">Season 3 of “Whose Chance?” reality show on jobs airs on VTV3</a></h2>
+                                <div class="number">1.</div>
+                            </article>
+                            <article class="story">
+                                <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=3" alt="110x73 (3:2)"></a>
+                                <h2><a href="03-detail.html" class="story__title">Hà Nội promotes organic farming, cuts use of pesticides</a></h2>
+                                <div class="number">2.</div>
+                            </article>
+                            <article class="story">
+                                <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=2" alt="110x73 (3:2)"></a>
+                                <h2><a href="03-detail.html" class="story__title">HCM City issues COVID safety criteria for enterprises</a></h2>
+                                <div class="number">3.</div>
+                            </article>
+                            <article class="story">
+                                <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=1" alt="110x73 (3:2)"></a>
+                                <h2><a href="03-detail.html" class="story__title">Foreign tourists can visit Việt Nam this month</a></h2>
+                                <div class="number">4.</div>
+                            </article>
+                            <article class="story">
+                                <a href="03-detail.html" class="story__thumb"><img src="https://source.unsplash.com/random/1024x682?sig=5" alt="110x73 (3:2)"></a>
+                                <h2><a href="03-detail.html" class="story__title">Some Hà Nội schools to resume in-classroom teaching from November 8</a></h2>
+                                <div class="number">5.</div>
+                            </article>
+                        </div>
                     </div>
                 </section>
                 <div class="banner">
@@ -410,6 +444,7 @@
 
     <!-- JS -->
     <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/jquery.simplyscroll.min.js"></script>
 
     <!-- JS Custom -->

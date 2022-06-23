@@ -75,12 +75,6 @@
 
             .search-form {
                 display: block;
-
-                .form-control {
-                    width: 150px;
-                    padding: 0 10px;
-                    background: #005798;
-                }
             }
         }
 
@@ -93,9 +87,21 @@
         }
 
         &-form {
-            display: none;
+            display: flex;
             position: absolute;
-            right: 42px;
+            top: -16px;
+            right: 136px;
+            margin-right: 12px;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+
+            &.active {
+                background: #005798;
+
+                .form-control {
+                    width: 150px;
+                    padding: 0 0 0 20px;
+                }
+            }
 
             .form-control {
                 font-size: 13px;
@@ -103,10 +109,14 @@
                 color: rgba(255, 255, 255, .5);
                 width: 0;
                 height: 50px;
-                padding: 0;
                 box-shadow: none;
+                background: none;
                 border: none;
                 border-radius: 0;
+
+                &::placeholder {
+                    color: rgba(255, 255, 255, .5);
+                }
             }
         }
     }

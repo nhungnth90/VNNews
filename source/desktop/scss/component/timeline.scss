@@ -13,7 +13,7 @@
         width: 100%;
     }
 
-    .story {
+    .story:not(:last-child) {
         padding-bottom: 30px;
         margin-bottom: 30px;
         border-bottom: 1px solid #eee;
@@ -21,7 +21,7 @@
 
     .story__thumb {
         width: 260px;
-        max-height: 173px;
+        height: 173px;
         float: left;
         margin-right: 25px;
     }

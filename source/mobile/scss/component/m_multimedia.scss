@@ -5,22 +5,22 @@
 @import "../base/custom-variables";
 @import "../mixins/mixins";
 
-.multi-tabs {
-    margin-top: 8px;
-    background: $success;
-    z-index: 1;
+#mediaTab {
+    border: 0 none;
+    margin-bottom: 16px;
 
-    @include breakpoint(768px) {
-        float: right;
-        margin-top: 3px;
-    }
-
-    .tablinks {
+    .nav-link {
         color: #fff;
         font-weight: 700;
         text-transform: uppercase;
+        padding: 0;
         margin-right: 16px;
         cursor: pointer;
+        border: 0 none;
+
+        @include breakpoint(0, 320px) {
+            margin-right: 10px;
+        }
 
         &:before {
             content: "";
@@ -35,19 +35,12 @@
 
         &.active {
             color: $secondary;
+            background: none;
 
             &:before {
                 background: $secondary;
             }
         }
-    }
-}
-
-.tabcontent {
-    display: none;
-
-    &.active {
-        display: block;
     }
 }
 
@@ -61,7 +54,6 @@
     .heading {
         color: #fff;
         background: $success;
-        margin-right: auto;
     }
 
     .story--focus {

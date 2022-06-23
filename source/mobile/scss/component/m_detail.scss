@@ -78,8 +78,16 @@
             p,
             table,
             h2,
-            h3 {
+            h3,
+            ul,
+            ol,
+            blockquote {
                 margin-bottom: 20px;
+            }
+
+            ul {
+                list-style: revert;
+                padding-left: 2rem;
             }
 
             img {
@@ -98,6 +106,13 @@
             a {
                 color: $primary;
                 display: inline;
+            }
+
+            strong,
+            b,
+            strong *,
+            b * {
+                font-weight: 500;
             }
 
             table td {
@@ -134,6 +149,40 @@
                         margin-bottom: 0;
                     }
                 }
+
+                &[align="left"] {
+                    width: 50%;
+                    float: left;
+                    margin-right: 20px;
+                    background: #f7f7f7;
+
+                    @include breakpoint(768px) {
+                        width: 33.33%;
+                    }
+
+                    .caption {
+                        padding: 10px 15px 15px;
+                    }
+                }
+
+                &[align="right"] {
+                    width: 50%;
+                    float: right;
+                    margin-left: 20px;
+                    background: #f7f7f7;
+
+                    @include breakpoint(768px) {
+                        width: 33.33%;
+                    }
+
+                    .caption {
+                        padding: 10px 15px 15px;
+                    }
+                }
+
+                &-cols .pic {
+                    padding: 2px;
+                }
             }
 
             table.video {
@@ -163,6 +212,58 @@
                     div,
                     p {
                         margin-bottom: 0;
+                    }
+                }
+            }
+
+            blockquote {
+                font-style: italic;
+                color: #555;
+                padding: 20px 30px 20px 60px;
+                border-left: 2px solid $secondary;
+                line-height: 1.6;
+                position: relative;
+                background: #f7f7f7;
+
+                &:before {
+                    font-family: Arial;
+                    content: "\201C";
+                    color: $secondary;
+                    font-size: 4em;
+                    position: absolute;
+                    left: 10px;
+                    top: -10px;
+                }
+
+                &:after {
+                    content: '';
+                }
+
+                span {
+                    display: block;
+                    font-size: 16px;
+                    color: #333;
+                    font-weight: 500;
+                    margin-top: 10px;
+                }
+
+                &.qleft {
+                    width: 50%;
+                    float: left;
+                    margin-right: 20px;
+
+                    @include breakpoint(768px) {
+                        width: 33.33%;
+                    }
+                }
+
+                &.qright {
+                    width: 50%;
+                    float: right;
+                    margin-left: 20px;
+
+                    @include breakpoint(768px) {
+                        width: 33.33%;
                     }
                 }
             }
@@ -263,6 +364,20 @@
         .highlight:after,
         .zone--highlight .zone__heading .heading {
             background: $primary;
+        }
+
+        .zone--highlight .row-cols-2 .story {
+            margin-bottom: 20px;
+
+            @include breakpoint(768px) {
+                width: 33.33%;
+            }
+
+            &__thumb {
+                @include breakpoint(768px) {
+                    height: 153px;
+                }
+            }
         }
     }
 }

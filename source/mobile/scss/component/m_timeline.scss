@@ -8,7 +8,7 @@
 .timeline {
     margin-bottom: 16px;
 
-    .story {
+    .story:not(:last-child) {
         padding-bottom: 16px;
         margin-bottom: 16px;
         border-bottom: 1px solid #eee;

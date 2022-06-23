@@ -173,6 +173,41 @@
     }
 }
 
+#latestTab {
+    height: 50px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    background: $primary;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    .nav-item:first-child .nav-link:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 8px;
+        height: 8px;
+        margin: 0 15px;
+        background: #fff;
+        border-radius: 20px;
+    }
+
+    .nav-link {
+        font-size: 24px;
+        color: rgba(255, 255, 255, .3);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0;
+        border: 0 none;
+
+        &.active {
+            color: #fff;
+            background: none;
+        }
+    }
+}
+
 .event {
     background: $info;
     border-radius: 5px;

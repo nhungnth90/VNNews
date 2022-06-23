@@ -85,3 +85,13 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('☺'),
+        url('../fonts/Roboto/Roboto-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
